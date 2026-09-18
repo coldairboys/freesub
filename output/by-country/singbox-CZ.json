@@ -5,18 +5,21 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇱🇻 拉脱维亚 (Latvia) 01 - xiaohe",
-      "server": "185.255.179.11",
-      "server_port": 9443,
-      "uuid": "d9d0f208-d582-41d5-bb7b-742671402810",
+      "tag": "🇨🇿 捷克 (Czech) 01 - xiaohe",
+      "server": "63.141.128.22",
+      "server_port": 443,
+      "uuid": "b8b01773-36b1-4b49-9bd0-6249f52345b4",
       "tls": {
         "enabled": true,
-        "server_name": "hub-lv-01.hanvpn.cc",
+        "server_name": "MiSty-tooth-78cA.FoboGAH414-e7B.WoRKERs.DEv",
         "insecure": false
       },
       "transport": {
-        "type": "grpc",
-        "service_name": "lv01-grpc-8e47a"
+        "type": "ws",
+        "path": "/eyJqdW5rIjoiTkNUaFg0ZnJNUjhhcyIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=",
+        "headers": {
+          "Host": "MiSty-tooth-78cA.FoboGAH414-e7B.WoRKERs.DEv"
+        }
       }
     },
     {
@@ -24,14 +27,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇱🇻 拉脱维亚 (Latvia) 01 - xiaohe"
+        "🇨🇿 捷克 (Czech) 01 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇱🇻 拉脱维亚 (Latvia) 01 - xiaohe"
+        "🇨🇿 捷克 (Czech) 01 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
