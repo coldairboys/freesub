@@ -5,13 +5,16 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇹🇭 泰国 (Thailand) 01 - xiaohe",
-      "server": "v2ray.simspeedup.com",
-      "server_port": 80,
-      "uuid": "3c52e091-6714-4915-949f-2149fe69951b",
+      "tag": "🇹🇷 土耳其 (Turkey) 01 - xiaohe",
+      "server": "max.karmatel.ir",
+      "server_port": 55519,
+      "uuid": "d10191ad-1671-496e-b0cb-be5a28d0739a",
       "transport": {
         "type": "ws",
-        "path": "/ws"
+        "path": "/",
+        "headers": {
+          "Host": "play-apps-features.googleusercontent.com"
+        }
       }
     },
     {
@@ -19,14 +22,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇹🇭 泰国 (Thailand) 01 - xiaohe"
+        "🇹🇷 土耳其 (Turkey) 01 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇹🇭 泰国 (Thailand) 01 - xiaohe"
+        "🇹🇷 土耳其 (Turkey) 01 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
