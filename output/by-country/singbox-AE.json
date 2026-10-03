@@ -4,8 +4,24 @@
   },
   "outbounds": [
     {
-      "type": "vless",
+      "type": "hysteria2",
       "tag": "🇦🇪 阿联酋 (UAE) 01 - xiaohe",
+      "server": "130.49.161.70",
+      "server_port": 443,
+      "password": "p7Q76LzlnS4hIzr1W3staBOnUe_WwSkR",
+      "tls": {
+        "enabled": true,
+        "server_name": "hy2.aspidnet.xyz",
+        "insecure": false
+      },
+      "obfs": {
+        "type": "salamander",
+        "password": "rG07s3COMIEvdnQipRyWzx_H_2xygNC3"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇦🇪 阿联酋 (UAE) 02 - xiaohe",
       "server": "31.59.150.11",
       "server_port": 443,
       "uuid": "cc4d63e2-3a86-49b3-9598-328bbe93e56c",
@@ -22,22 +38,6 @@
           "public_key": "yI6maXxTQ8zRHg39X8YMQtKW-IVfNIn0_OCUIQKmcXw",
           "short_id": ""
         }
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇦🇪 阿联酋 (UAE) 02 - xiaohe",
-      "server": "130.49.161.70",
-      "server_port": 443,
-      "password": "p7Q76LzlnS4hIzr1W3staBOnUe_WwSkR",
-      "tls": {
-        "enabled": true,
-        "server_name": "hy2.aspidnet.xyz",
-        "insecure": false
-      },
-      "obfs": {
-        "type": "salamander",
-        "password": "rG07s3COMIEvdnQipRyWzx_H_2xygNC3"
       }
     },
     {
@@ -60,7 +60,10 @@
       "uuid": "39947382-3212-41c9-bc3a-589574ac8b23",
       "transport": {
         "type": "ws",
-        "path": "/"
+        "path": "/",
+        "headers": {
+          "Host": "uae.unixzone.us"
+        }
       }
     },
     {
